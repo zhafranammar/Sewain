@@ -1,0 +1,120 @@
+.custom-navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.navbar-wrapper{
+    display: flex;
+    width: 100%;
+}
+.navbar-main{
+    background-color: var(--clr-primary-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem 2rem;
+}
+.navbar-main__search{
+    width: 40%;
+    height: 100%;
+}
+.navbar-main__search-container{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50rem;
+    padding: .5rem;
+}
+.navbar-logo{
+    background: var(--clr-primary-2);
+    width: 20%;
+}
+.logo-img{
+    width: 6rem;
+}
+.navbar-main__search-container input{
+    border: none;
+    font-family: 'Open Sans';
+    background-color: white;
+    border-radius: 50rem;
+    margin-left: 1rem;
+}
+.navbar-main__search-container input:focus{
+   outline: none;
+}
+.btn-search{
+    background-color: var(--clr-primary-2);
+    color: white;
+    border-radius: 50rem;
+    padding: .3rem 1.5rem;
+}
+.btn{
+    border: none;
+    cursor: pointer;
+}
+.navbar-sub{
+    background-color: var(--clr-primary-3);
+    display: flex;
+    justify-content: center;
+}
+.navbar-sub .navbar-sub__links{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar-sub__link{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 1rem;
+    opacity: .6;
+    letter-spacing: 2px;
+    transition: all .2s;
+}
+.navbar-sub__link:hover, .navbar-sub__links .active{
+    color: white;
+    opacity: 1;
+}
+.navbar-main__icons{
+    width: 18%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-main__icons a{
+    color: var(--clr-primary-1);
+    text-decoration: none;
+}
+.icon{
+    font-size: 2rem;
+}
+.logout{
+    font-size: 1.5rem;
+}
+.keranjang, .notif{
+    position: relative;
+}
+.keranjang::after{
+    content: "3";
+    background-color: var(--clr-tertiary-1);
+    color: white;
+    font-size: 1rem;
+    border-radius: 10rem;
+    padding: 0rem .5rem;
+    position: absolute;
+    left: 1.5rem;
+    top: -1rem;
+}
+.notif::after{
+    content: "1";
+    background-color: var(--clr-tertiary-1);
+    color: white;
+    font-size: 1rem;
+    border-radius: 10rem;
+    padding: 0 .4rem;
+    position: absolute;
+    left: 1rem;
+    top: -1rem;
+}

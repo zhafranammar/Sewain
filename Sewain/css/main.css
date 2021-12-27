@@ -1,0 +1,42 @@
+/* Disini untuk import file css lain (harus paling atas) */
+@import 'home/banner.css';
+@import 'home/kategori.css';
+@import 'home/navbar.css';
+@import 'home/promo.css';
+@import 'home/footer.css';
+@import 'profil.css';
+@import 'penilaian.css';
+@import 'pengembalian.css';
+@import 'keranjang.css';
+@import 'pembayaran.css';
+@import 'menyewakan.css';
+@import 'toko.css';
+
+
+
+:root{
+    /* disini untuk bikin variable global (harus diawali dengan tanda "--")*/
+    --clr-primary-1: #6AE9ED;
+    --clr-primary-2: #1B54C4;
+    --clr-primary-3: #5C7AEA;
+
+    --clr-secondary-1: #0E182C;
+    --clr-secondary-2: #6587B4;
+
+    --clr-tertiary-1: #F84E35;
+    --clr-bg: rgb(243, 243, 243);
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%; /*10px*/
+}
+body{
+    background-color: var(--clr-bg);
+}
